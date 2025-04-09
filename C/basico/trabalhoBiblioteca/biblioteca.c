@@ -11,7 +11,10 @@
 
 void mostrarCabecalho(const char *titulo) {
     LIMPAR_TELA;
-    printf(ANSI_MAGENTA ANSI_NEGRITO "\n=== %s ===\n\n" ANSI_RESET, titulo);
+    printf(ANSI_MAGENTA ANSI_NEGRITO "\n╔═════════════════════════╗");
+    printf(ANSI_MAGENTA ANSI_NEGRITO "\n║ %-24s ║" ANSI_RESET, titulo);
+    printf(ANSI_CIANO "\n╚═════════════════════════╝" ANSI_RESET);
+    printf(ANSI_AMARELO "\n  Desenvolvido por: Gabriel Schultz e João Sass\n\n" ANSI_RESET);
 }
 
 void inicializarAcervoPadrao(Livro livros[], int *totalLivros) {
