@@ -1,0 +1,10 @@
+import player
+# from player import *
+
+def main():
+    player.atacar()
+    player.dados()
+    player.equipar()
+
+if __name__ == "__main__":
+    main()
